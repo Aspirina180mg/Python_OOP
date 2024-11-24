@@ -11,4 +11,4 @@ from bank_account import BankAccount
 cuenta = BankAccount("Alice", 1000)
 cuenta.deposit(234)
 print(cuenta.get_balance())
-# print(account.__balance) no funcionaría porque __balance es privado
+# print(cuenta.__balance) # no funcionaría porque __balance es privado

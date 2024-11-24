@@ -1,0 +1,55 @@
+Desafío: Sistema de Gestión de Vehículos
+
+Contexto:
+Vas a crear un sistema para gestionar diferentes tipos de vehículos en una 
+flota. 
+Cada tipo de vehículo tiene características y comportamientos únicos, pero 
+también comparten algunas funcionalidades básicas.
+
+Requisitos:
+
+Abstracción:
+
+Diseña una clase base abstracta llamada Vehículo que contenga las 
+características comunes de todos los vehículos:
+marca
+modelo
+año
+Define métodos abstractos como:
+arrancar()
+detener()
+informar_estado()
+
+Encapsulamiento:
+
+Asegúrate de que algunos atributos, como el nivel de combustible o el estado 
+del motor, estén privados.
+Proporciona métodos públicos para interactuar con estos atributos, como 
+cargar_combustible() o obtener_nivel_combustible().
+
+Herencia:
+
+Crea al menos dos clases hijas que hereden de Vehículo:
+Ejemplo: Auto y Motocicleta.
+Cada clase hija puede tener comportamientos específicos. Por ejemplo:
+Los autos tienen aire_acondicionado (atributo).
+Las motocicletas pueden realizar una maniobra especial como hacer_caballito() 
+(método).
+
+Polimorfismo:
+
+Implementa un método polimórfico llamado informar_estado() que cada clase hija 
+personalice.
+Ejemplo:
+Un auto puede informar: "Auto {marca} está detenido con aire acondicionado 
+apagado".
+Una motocicleta puede informar: "Motocicleta {marca} está lista para un 
+caballito".
+
+Extras para hacerlo más interesante (Opcional):
+Implementa una clase adicional para vehículos eléctricos con características 
+únicas, como cargar_batería().
+Crea un sistema que permita gestionar una lista de vehículos y recorrerlos 
+para ejecutar acciones como arrancar o detener.
+Agrega una funcionalidad de "simulación", donde puedes realizar ciertas 
+acciones (por ejemplo, reducir el nivel de combustible al arrancar).
